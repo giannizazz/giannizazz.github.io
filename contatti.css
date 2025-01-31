@@ -1,0 +1,76 @@
+/* Palette colori */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Grigio chiaro */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Grigio scuro per il testo */
+}
+
+header {
+    background-color: #7f1d1d; /* Rosso vino scuro */
+    color: #fff; /* Testo bianco */
+    padding:15px;
+    text-align: center;
+    border-bottom: 5px solid #090909; /* Rosa chiaro */
+}
+
+.titolo {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff; /* Bianco */
+    font-family: 'Dancing Script', cursive;
+}
+
+.h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #0d0d0d; /* Rosa chiaro */
+    font-family: 'Dancing Script', cursive;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info-container {
+    margin: 20px auto;
+    max-width: 550px;
+}
+
+.info-box {
+    background-color: #fff; /* Bianco */
+    border: 2px solid #7f1d1d; /* Rosso vino */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.info-box a {
+    color: #7f1d1d; /* Rosso vino */
+    text-decoration: none;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    background: radial-gradient(circle, rgba(14, 14, 14, 0.9) 0%, rgba(89, 52, 65, 0) 100%); /* Vignetta scura al centro che sfuma verso il trasparente */
+    color: #fff; /* Colore del testo bianco */
+    text-align: center; /* Allinea il testo al centro */
+    padding: 5px 0; /* Spazio sopra e sotto il testo */
+    position: fixed; /* Fissa il footer in fondo alla pagina */
+    bottom: 0; /* Posiziona il footer in basso */
+    left: 0;
+    font-size: 8px; /* Dimensione del testo */
+}

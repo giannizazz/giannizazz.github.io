@@ -1,0 +1,151 @@
+body {  
+    background: linear-gradient(to top, #280404, #751818); /* Gradiente di colore */
+    margin: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 110px;
+    color: white; /* Testo bianco per tutto il sito */
+}
+
+.titolo {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    font-style: italic;
+    z-index: 1;
+    color: white;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px; /* Regola la dimensione del logo */
+    height: auto;
+}
+
+.sottotitolo {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    z-index: 1;
+    color: white;
+}
+
+.contenitore {
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+}
+
+.riquadro {
+    position: relative; 
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid rgb(243, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    color: black;
+}
+
+.riquadro:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.immagine-riquadro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.riquadro b {
+    position: relative; 
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(131, 52, 52);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+.orari1, .orari2, .orari3 {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.orari1 {
+    margin-top: 50px;
+}
+
+.orari2, .orari3 {
+    margin-top: -12px;
+}
+
+footer {
+    width: 100%;
+     color: #fff;
+    text-align: center;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+}
+
+/* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
+    .contenitore {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .riquadro {
+        width: 100%;
+        height: 80px;
+        font-size: 18px;
+    }
+
+    .titolo {
+        font-size: 45px;
+        margin-top: -90px;
+    }
+
+    .sottotitolo {
+        font-size: 23px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+    .logo {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        width: 100px; /* Regola la dimensione del logo */
+        height: auto;
+    }
+    
+  }
